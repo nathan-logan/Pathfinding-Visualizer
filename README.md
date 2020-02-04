@@ -1,2 +1,4 @@
-# TS-Pathfinding-Visualizer
-A basic A* pathfinding visualizer written in TypeScript
+# Pathfinding Visualizer
+A* pathfinding visualizer written in TypeScript
+
+https://shadeyrl.github.io/Pathfinding-Visualizer/index.html

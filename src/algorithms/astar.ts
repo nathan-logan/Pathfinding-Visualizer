@@ -62,6 +62,9 @@ const astar = (nodes: TileNode[], start: TileNode, target: TileNode, boardArray:
             }
         })
     }
+    if (!openSet.length) {
+        return console.log("target coulnd't be found :(")
+    }
 }
 
 export default astar;

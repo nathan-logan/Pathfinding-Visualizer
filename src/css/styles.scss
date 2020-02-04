@@ -1,0 +1,43 @@
+#board {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#drawWalls, #newEndingNode, #newStartingNode {
+    &.active {
+        font-weight: bold;
+        outline: 2px solid lime;           
+    }
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    div {
+        width: 20px;
+        height: 20px;
+        outline: 1px solid #333;
+        &.unsolved {
+            background: #999;
+        }
+        &.solved {
+            background: yellow;
+        }
+        &.wall {
+            background: #333;
+        }
+        &.solution {
+            background: #CE09FF;
+        }
+    &.start {
+            background: #68E200;
+        }
+        &.target {
+            background: #BC1763;
+        }
+    }
+}
+

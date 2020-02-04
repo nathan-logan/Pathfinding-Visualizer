@@ -1,0 +1,55 @@
+#board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#drawWalls.active, #newEndingNode.active, #newStartingNode.active {
+  font-weight: bold;
+  outline: 2px solid lime;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 20px;
+}
+
+.row div {
+  width: 20px;
+  height: 20px;
+  outline: 1px solid #333;
+}
+
+.row div.unsolved {
+  background: #999;
+}
+
+.row div.solved {
+  background: yellow;
+}
+
+.row div.wall {
+  background: #333;
+}
+
+.row div.solution {
+  background: #CE09FF;
+}
+
+.row div.start {
+  background: #68E200;
+}
+
+.row div.target {
+  background: #BC1763;
+}
+/*# sourceMappingURL=styles.css.map */
